@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеосервис</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#36a0be">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#!" class="header__logo-link">
+                        <img src="./img/svg/logo.svg" alt="" class="header__logo-thumb">
+                        <p class="header__logo-title">Видеосервис</p>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <form action="" class="search-form">
+                        <fieldset class="search-form__wrapper">
+                            <p class="search-form__info">
+                                <input type="text" name="Поиск" class="search-form__field" placeholder="Поиск...">
+                                <button type="submit" class="search-form__submit">Найти</button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="header__auth">
+                    <div class="header__login_name">
+                        <p class="header__login-text" id="header__login-text-p">Константин</p> 
+                        <input type="text" id="input__login_name" class="header__login_name-input" maxlength="14">
+                    </div>
+                    <div class="header__auth_exit">
+                        <a href="" class="header__auth_exit-link">
+                            Выйти
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--HEADER END-->
+
+    <!--POPUP-->
+    <div class="popup-login" id="popupLogin">
+        <div class="close-popup"></div>
+        <div class="popup">
+            <p class="popup__title">Вход</p>
+            <form action="" method="POST" class="popup__form">
+                <input type="text" name="login" id="login" placeholder="Логин" class="popup__form-login">
+                <input type="password" name="pass" id="pass" placeholder="Пароль" class="popup__form-password">
+                <label class="popup__form-remember">
+                    <input type="checkbox" class="popup__form-checkbox">Запомнить
+                </label>
+                <button type="button" class="popup__form-btn header__login-btn">Войти</button>
+            </form>
+        </div>
+    </div>
+    <!--POPUP END-->
+
+    <!--TABS-->
+    <section class="tabs">
+        <div class="wrapper">
+            <nav class="tabs__items">
+                <a href="#tab-1" class="tabs__item">Фильмы</a>
+                <a href="#tab-2" class="tabs__item">Телеканалы</a>
+            </nav>
+        </div>
+    </section>
+    <!--TABS END-->
+
+    <!--FILMS-->
+    <section class="films tab-content__item" id="tab-1">
+        <div class="wrapper">
+            <div class="new">
+                <div class="new__wrapper">
+                    <h2 class="new__title">🔥 Новинки</h2>
+                    <div class="new__items">
+                        <div class="new__item">
+                            <div class="new__item-thumb">
+                                <img src="./img/cat.jpg" alt="" class="new__item-pic">
+                                <div class="new__item-text">Описание фильма</div>
+                            </div>
+                            <p class="new__item-title">Мульт в кино. Выпуск №103. Некогда грустить!</p>
+                        </div>
+                        <div class="new__item">
+                            <div class="new__item-thumb">
+                                <img src="./img/batman.jpg" alt="" class="new__item-pic">
+                                <div class="new__item-text">Описание фильма</div>
+                            </div>    
+                                <p class="new__item-title">Новый Бэтмен</p>
+                        </div>
+                        <div class="new__item">
+                            <div class="new__item-thumb">
+                                <img src="./img/hollywood.jpg" alt="" class="new__item-pic">
+                                <div class="new__item-text">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</div>
+                            </div>
+                            <p class="new__item-title">Однажды... в Голливуде</p>
+                        </div>
+                        <div class="new__item">
+                            <div class="new__item-thumb">
+                                <img src="./img/strip.jpg" alt="" class="new__item-pic">
+                                <div class="new__item-text">Описание фильма</div>
+                            </div>
+                                <p class="new__item-title">Стриптизёрши</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="genres">
+                <div class="genres__wrapper">
+                    <div class="genres__item genres__comedy">
+                        <a href="#!" class="genres__item-link">
+                            <h3 class="genres__item-smile">😁</h3>Комедии
+                        </a>
+                    </div>
+                    <div class="genres__item genres__drama">
+                        <a href="#!" class="genres__item-link">
+                            <h3 class="genres__item-smile">😭</h3>Драмы
+                        </a>                    
+                    </div>
+                    <div class="genres__item genres__fantasy">
+                        <a href="#!" class="genres__item-link">
+                            <h3 class="genres__item-smile">👽</h3>Фантастика
+                        </a>
+                    </div>
+                    <div class="genres__item genres__horror">
+                        <a href="#!" class="genres__item-link">
+                            <h3 class="genres__item-smile">👻</h3>Ужасы
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FILMS END-->
+
+    <!--CHANNELS-->
+    <section class="channels tab-content__item" id="tab-2">
+        <div class="wrapper">
+            <div class="channels__items">
+                <div class="channels__item">
+                    <div class="channels__item-logo"><img src="./img/svg/channel-first.svg" alt="" class="channels__item-logo-thumb"></div>
+                    <div class="channels__item-info">
+                        <h3 class="channels__item-title">Первый канал</h3>
+                        <p class="channels__item-text channels__item-text--active">13:00&emsp;Новости (с субтитрами)</p>
+                        <p class="channels__item-text">14:00&emsp;Давай поженимся</p>
+                        <p class="channels__item-text">15:00&emsp;Другие новости</p>
+                    </div>
+                </div>
+                <div class="channels__item">
+                    <div class="channels__item-logo"><img src="./img/svg/channel-2x2.svg" alt="" class="channels__item-logo-thumb"></div>
+                    <div class="channels__item-info">
+                        <h3 class="channels__item-title">2x2</h3>
+                        <p class="channels__item-text channels__item-text--active">13:00&emsp;МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                        <p class="channels__item-text">14:00&emsp;ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                        <p class="channels__item-text">15:00&emsp;БУРДАШЕВ. Сезон 1, 20 серия</p>
+                    </div>
+                </div>
+                <div class="channels__item">
+                    <div class="channels__item-logo"><img src="./img/svg/channel-rbc.svg" alt="" class="channels__item-logo-thumb"></div>
+                    <div class="channels__item-info">
+                        <h3 class="channels__item-title">РБК</h3>
+                        <p class="channels__item-text channels__item-text--active">13:00&emsp;ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                        <p class="channels__item-text">14:00&emsp;ДЕНЬ. Главные темы</p>
+                        <p class="channels__item-text">15:00&emsp;Главные новости</p>
+                    </div>
+                </div>
+                <div class="channels__item">
+                    <div class="channels__item-logo"><img src="./img/svg/channel-amedia.svg" alt="" class="channels__item-logo-thumb"></div>
+                    <div class="channels__item-info">
+                        <h3 class="channels__item-title">AMEDIA PREMIUM</h3>
+                        <p class="channels__item-text channels__item-text--active">13:00&emsp;Клиент всегда мёртв</p>
+                        <p class="channels__item-text">14:00&emsp;Голодные игры: Сойка-пересмешница. Часть I</p>
+                        <p class="channels__item-text">15:00&emsp;Секс в большом городе</p>
+                    </div>
+                </div>
+                <div class="channels__item">
+                    <div class="channels__item-logo"><img src="./img/svg/channel-first.svg" alt="" class="channels__item-logo-thumb"></div>
+                    <div class="channels__item-info">
+                        <h3 class="channels__item-title">Первый канал</h3>
+                        <p class="channels__item-text channels__item-text--active">13:00&emsp;Новости (с субтитрами)</p>
+                        <p class="channels__item-text">14:00&emsp;Давай поженимся</p>
+                        <p class="channels__item-text">15:00&emsp;Другие новости</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CHANNELS END-->
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <div class="footer__logo">
+                    <img src="./img/svg/footer-logo.svg" alt="" class="footer__logo-pic">
+                </div>
+                <div class="footer__text">
+                    <p class="footer__text_adress">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                    <p class="footer__text_number"><a href="tel:+7(3412)938861" class="footer__text_number-link">+7 (3412) 93-88-61, 43-29-29</a></p>
+                    <p class="footer__text_site"><a href="https://htc-cs.ru/" class="footer__text_site-link">htc-cs.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+    <script src="./js/main.js"></script>
+    <script src="./js/namechange.js"></script>
+</body>
+</html>
